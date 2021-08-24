@@ -1,8 +1,15 @@
+import React from "react";
+import Navbar from "./components/Navbar";
+import Ordem from "./components/Ordem/Index";
+import "./styles/main.css";
 
 function App() {
   return (
     <div className="App">
-     <h1>homepage</h1>
+      <Navbar />
+      <div className="fromInput">
+        <Ordem />
+      </div>
     </div>
   );
 }
