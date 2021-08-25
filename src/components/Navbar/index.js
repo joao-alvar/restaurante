@@ -4,7 +4,12 @@ const Navbar = () => {
   return (
     <header>
       <div className="navbar__container">
-        <h2 className="logo">LaCocina</h2>
+        <div className="logo__container">
+          <h2 className="logo">
+            La Cocina
+            <span className="logo__span">mexicana</span>
+          </h2>
+        </div>
       </div>
     </header>
   );

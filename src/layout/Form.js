@@ -4,7 +4,7 @@ const FormLayout = (props) => {
   const { children, ...other } = props;
   return (
     <form className="form__layout" noValidate autoComplete="off" {...other}>
-      {props.children}
+      {children}
     </form>
   );
 };

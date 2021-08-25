@@ -3,7 +3,7 @@ import OrdemForm from "./OrdemForm";
 
 const Ordem = () => {
   return (
-    <div className="ordem__form">
+    <div className="ordem__form" id="pedido">
       <OrdemForm />
     </div>
   );
