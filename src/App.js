@@ -7,9 +7,7 @@ function App() {
   return (
     <div className="App">
       <HomePage />
-      <div className="formInput" id="a">
-        <Ordem />
-      </div>
+      <Ordem />
     </div>
   );
 }

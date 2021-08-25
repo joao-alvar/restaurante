@@ -33,6 +33,7 @@
     margin-top: 6rem;
     text-shadow: 1px 2px 2px #000;
     letter-spacing: 2px;
+    color: #fff;
 }
 
 .inner__h1__wrap {
@@ -50,6 +51,7 @@
 .inner__content__h1,
 .inner__content__h2 {
     font-size: 8rem;
+    color: #fff;
 }
 
 .inner__content__h2 {
