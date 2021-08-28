@@ -1,23 +1,20 @@
 import React, { useContext } from "react";
 import { isInCart } from "../../helpers";
 import { CartContext } from "../../context/cart-context";
-import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FeaturedProduct = (props) => {
-  const { title, imageURL, price, history, id, description } = props;
-  const product = { title, imageURL, price, history, id, description };
+  const { title, imageURL, price, id, description } = props;
+  const product = { title, imageURL, price, id, description };
   const { addProduct, cartItems, increase } = useContext(CartContext);
   const itemInCart = isInCart(product, cartItems);
 
   return (
     <li className="cart__list__items food__list__li">
       <div className="cart__items__img__wrap">
-        <img
-          src={imageURL}
-          alt={title}
-          className="cart__items__img"
-          onClick={() => history.push(`/product/${id}`)}
-        />
+        <Link to={`/product/${id}`}>
+          <img src={imageURL} alt={title} className="food__items__img" />
+        </Link>
       </div>
       <div className="cart__content">
         <h2>{title}</h2>
@@ -31,7 +28,7 @@ const FeaturedProduct = (props) => {
             className="btn__minha__lista"
             onClick={() => addProduct(product)}
           >
-            <span>adcionar</span>
+            <span>pedir</span>
           </button>
         )}
         {itemInCart && (
@@ -48,4 +45,4 @@ const FeaturedProduct = (props) => {
   );
 };
 
-export default withRouter(FeaturedProduct);
+export default FeaturedProduct;

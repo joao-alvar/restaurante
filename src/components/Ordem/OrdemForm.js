@@ -26,7 +26,7 @@ const OrdemForm = (props) => {
               placeholder="Adcionar observação"
               id="observacao"
               rows="6"
-              cols="84"
+              cols="85"
             />
           </div>
           <SearchBar data={BookData} />

@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import CloseIcon from "@material-ui/icons/Close";
 import Input from "../../controls/Input";
+import { Link } from "react-router-dom";
 
-const SearchBar = ({ placeholder, data }) => {
+const SearchBar = (props) => {
+  const { price, data, id } = props;
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 
@@ -50,15 +52,10 @@ const SearchBar = ({ placeholder, data }) => {
         <div className="dataResult">
           {filteredData.slice(0, 15).map((value, key) => {
             return (
-              <a
-                className="dataItem"
-                href={value.link}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link className="dataItem" to={`/product/${value.id}`}>
                 <p>{value.title} </p>
-                <p>{value.year} </p>
-              </a>
+                <p className="search__list__price">{value.price} </p>
+              </Link>
             );
           })}
         </div>
