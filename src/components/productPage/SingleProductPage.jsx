@@ -4,7 +4,7 @@ import { ProductsContext } from "../../context/products-context";
 import { CartContext } from "../../context/cart-context";
 import { isInCart } from "../../helpers";
 
-const ProductPage = ({ match, history: { push } }) => {
+const SingleProductPage = ({ match, history: { push } }) => {
   const { products } = useContext(ProductsContext);
   const { addProduct, cartItems, increase } = useContext(CartContext);
   const { id } = match.params;
@@ -69,4 +69,4 @@ const ProductPage = ({ match, history: { push } }) => {
   );
 };
 
-export default withRouter(ProductPage);
+export default withRouter(SingleProductPage);
