@@ -22,19 +22,22 @@ export const AddUser = () => {
   };
 
   return (
-    <div className="inputName__container">
-      <Input
-        className="inputName"
-        id="name"
-        type="text"
-        value={name}
-        onChange={onChange}
-        name="name"
-        required
-      />
-      <button onClick={OnHandleName}>Submit</button>
-
+    <>
+      <div className="inputName__container">
+        <Input
+          className="inputName"
+          id="name"
+          type="text"
+          value={name}
+          onChange={onChange}
+          name="name"
+          required
+        />
+        <button onClick={OnHandleName} className="inputName__btn">
+          Adcionar
+        </button>
+      </div>
       <UserList />
-    </div>
+    </>
   );
 };
