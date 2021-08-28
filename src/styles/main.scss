@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap");
 
-@import "Navbar", "Form", "HomePage", "Searchbar", "Order.scss";
+@import "Navbar", "Form", "HomePage", "Searchbar", "Order.scss", "SingleProduct";
 :root {
   --primary-font: "Oswald", sans-serif;
   --secondary-font: "Bebas Neue", "Roboto", cursive, sans-serif;

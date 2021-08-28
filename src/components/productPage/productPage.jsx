@@ -26,38 +26,43 @@ const ProductPage = ({ match, history: { push } }) => {
   const itemInCart = isInCart(product, cartItems);
   return (
     <section className="product__page__wrap">
-      <div className="product__page__img__wrap">
-        <img src={imageURL} alt={title} />
-      </div>
       <div className="product__page__container">
-        <div className="product__page__title">
-          <h1>{title}</h1>
-          <p>R$ {price}</p>
-        </div>
-        <div className="product__page__description">
-          <h3 className="product__page__description__h3">Sobre o prato</h3>
-          <p>{description}</p>
-        </div>
-        <div className="product__page__btn">
-          {!itemInCart && (
-            <button
-              className="btn__product btn__primary"
-              onClick={() => addProduct(product)}
-            >
-              {""}
-              pedir
+        <div className="product__page__wrapper">
+          <div className="product__page__img__wrap">
+            <img src={imageURL} alt={title} className="product__page__img" />
+          </div>
+
+          <div className="product__page__title">
+            <h1>{title}</h1>
+            <p className="product__page__price">R$ {price}</p>
+          </div>
+          <div className="product__page__description">
+            <h3 className="product__page__description__h3">Sobre o prato</h3>
+            <p className="product__description">{description}</p>
+          </div>
+          <div className="product__page__btn">
+            {!itemInCart && (
+              <button
+                className="btn__product btn__sg__primary"
+                onClick={() => addProduct(product)}
+              >
+                {""}
+                pedir
+              </button>
+            )}
+            {itemInCart && (
+              <button
+                className="btn__product btn__sg__primary"
+                onClick={() => increase(product)}
+              >
+                {" "}
+                pedir mais um?
+              </button>
+            )}
+            <button className="btn__product btn__sg__secondary">
+              checkout
             </button>
-          )}
-          {itemInCart && (
-            <button
-              className="btn__product btn__primary"
-              onClick={() => increase(product)}
-            >
-              {" "}
-              pedir mais um?
-            </button>
-          )}
-          <button className="btn__product btn__secondary">checkout</button>
+          </div>
         </div>
       </div>
     </section>

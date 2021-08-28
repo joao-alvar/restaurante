@@ -5,9 +5,9 @@ import Select from "../../controls/Select";
 // import SelectInput from "../../components/SelectInput";
 
 const pagamento = [
+  { id: "dinheiro", title: "Dinheiro" },
   { id: "credito", title: "Cartão de crédito" },
   { id: "debito", title: "Cartão de débito" },
-  { id: "dinheiro", title: "Dinheiro" },
 ];
 
 const Total = ({ itemCount, total, clearCart }) => {
@@ -70,32 +70,40 @@ const Total = ({ itemCount, total, clearCart }) => {
             <button onClick={() => clearCart()}>calcular</button> */}
 
             <div className="change__tip">
-              <input
-                type="text"
-                id="result"
-                value={currentNum}
-                placeholder="Resultado"
-                readOnly
-                className="change__tip__results"
-              />
-              <input
-                type="number"
-                id="num"
-                placeholder="Colocar montante"
-                className="change__tip__num"
-              />
+              <label
+                htmlFor="num"
+                className="inputLabelTotal change__tip__label"
+              >
+                Troco a receber*
+              </label>
+              <div className="change__input__wrap">
+                <input
+                  type="number"
+                  id="num"
+                  placeholder="Colocar montante"
+                  className="change__tip__num"
+                />
+                <input
+                  type="text"
+                  id="result"
+                  value={currentNum}
+                  placeholder="Resultado"
+                  readOnly
+                  className="change__tip__results"
+                />
+              </div>
               <div className="change__tip__btn__wrap">
                 <button
                   className="change__tip__btn change__btn__primary"
                   onClick={Add}
                 >
-                  Add
+                  Calcular
                 </button>
                 <button
                   className="change__tip__btn change__btn__secondary"
                   onClick={Clear}
                 >
-                  Clear
+                  Limpar
                 </button>
               </div>
             </div>

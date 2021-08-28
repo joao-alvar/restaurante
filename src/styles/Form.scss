@@ -105,7 +105,7 @@
 }
 
 .btn__secondary {
-  margin-top: 5em;
+  margin-top: 2em;
   color: #fff;
   background-color: #efb90a;
   border-color: #efb90a;
@@ -170,4 +170,62 @@
   padding-top: 0.52rem;
   padding-left: 0.52rem;
   outline: none;
+}
+
+// Troco Form
+
+.change__tip {
+  position: relative;
+  height: 9.3rem;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .change__input__wrap {
+    display: flex;
+    margin-top: 0.31rem;
+    gap: 1rem;
+
+    .change__tip__results,
+    .change__tip__num {
+      padding-left: 0.25rem;
+      width: 98%;
+      height: 3.5rem;
+    }
+  }
+
+  .change__tip__btn__wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    gap: 1rem;
+
+    .change__tip__btn {
+      outline: none;
+      border: 1px solid #666;
+      padding: 0.52rem 1.67rem;
+      background-color: transparent;
+      transition: 500ms;
+    }
+
+    .change__btn__primary {
+      background-color: #000;
+      color: #fff;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .change__btn__secondary {
+      &:hover {
+        background-color: #eee;
+      }
+    }
+  }
+
+  .change__tip__label {
+  }
 }
