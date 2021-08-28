@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "title": "Chilaquiles",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/225px-FOOD_Chilaquiles_1.jpg",
+      "price": 19.85,
+      "codigo": 150
+    },
+    {
+      "id": 2,
+      "title": "Tacos",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tacos1.jpg/200px-Tacos1.jpg",
+      "price": 4.99,
+      "codigo": 520
+    },
+    {
+      "id": 3,
+      "title": "Burritos",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://images.unsplash.com/photo-1562059390-a761a084768e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=706&q=80",
+      "price": 8.15,
+      "codigo": 310
+    },
+    {
+      "id": 4,
+      "title": "Pozole de Pollo o Guajolote",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/220px-Pozole.jpg",
+      "price": 30.99,
+      "codigo": 298
+    },
+    {
+      "id": 5,
+      "title": "Quesadilla",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://images.unsplash.com/photo-1618040996337-56904b7850b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "price": 29.19,
+      "codigo": 178
+    },
+    {
+      "id": 6,
+      "title": "Enchiladas",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://images.unsplash.com/photo-1570461226513-e08b58a52c53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
+      "price": 39.99,
+      "codigo": 222
+    },
+    {
+      "id": 7,
+      "title": "Aguachile",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://images.unsplash.com/photo-1595531507616-1f5347ee003b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+      "price": 40.61,
+      "codigo": 107
+    },
+    {
+      "id": 8,
+      "title": "Ceviche",
+      "description":
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+      "imageURL":
+        "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2V2aWNoZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "price": 21.99,
+      "codigo": 205
+    }
+  ]
+  

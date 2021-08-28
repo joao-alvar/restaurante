@@ -1,0 +1,100 @@
+.order__details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lista__cart__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cart__list__items {
+  width: 78%;
+  display: flex;
+  gap: 2rem;
+  background-color: #eee;
+
+  .cart__items__img {
+    width: 10rem;
+    height: 7rem;
+  }
+
+  .cart__content {
+    margin-top: 0.5rem;
+  }
+
+  .cart__price {
+    font-size: 1.2rem;
+  }
+}
+
+.cart__quant {
+  font-size: 1.2rem;
+}
+
+.cart__btn__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 2rem;
+
+  .btn__cart {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
+}
+
+// lista de pedidos vazia
+
+.lista__vazia {
+  width: 80%;
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .lista__vazia__p {
+    font-size: 1.46rem;
+  }
+}
+
+// Food list
+
+.food__list__ul {
+  margin-top: 2%;
+  margin-left: 11.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2em;
+
+  .food__list__li {
+    width: 95%;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.food__list__description {
+  width: 95%;
+}
+
+.product__btn__wrap {
+  margin-top: auto;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  background-color: #eee;
+
+  .btn__minha__lista {
+    outline: none;
+    width: max-content;
+    padding: 0.71rem 1rem;
+  }
+}

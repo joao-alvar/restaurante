@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="logo__container">
           <h2 className="logo">
             La Cocina
-            <span className="logo__span">mexicana</span>
+            <span className="logo__span">de papel</span>
           </h2>
         </div>
       </div>

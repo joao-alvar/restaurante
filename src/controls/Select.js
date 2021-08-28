@@ -1,27 +1,32 @@
 import React from "react";
 
-const Input = (props) => {
+const Select = (props) => {
   const {
     placeholder,
     name,
     value,
-    type,
     onChange,
+    options,
     error = null,
     ...other
   } = props;
   return (
-    <input
+    <select
       className="form__input"
       placeholder={placeholder}
       name={name}
       value={value}
       onChange={onChange}
-      type={type}
       {...other}
       {...(error && { error: true, helperText: error })}
-    />
+    >
+      {options.map((item) => (
+        <option key={item.id} value={item.id}>
+          {item.title}
+        </option>
+      ))}
+    </select>
   );
 };
 
-export default Input;
+export default Select;
