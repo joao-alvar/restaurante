@@ -3,7 +3,7 @@
       "id": 1,
       "title": "Chilaquiles",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "é um prato típico da culinária mexicana, feito de tortillas partidas em pedaços e fritas, e servidas numa salsa, que pode ser mais ou menos picante, verde ou vermelha.",
       "imageURL":
         "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/FOOD_Chilaquiles_1.jpg/225px-FOOD_Chilaquiles_1.jpg",
       "price": 19.85,
@@ -13,7 +13,7 @@
       "id": 2,
       "title": "Tacos",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "O taco (tortillas de milho redondas recheadas) é uma das iguarias mais típicas do México e popular no mundo todo.",
       "imageURL":
         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Tacos1.jpg/200px-Tacos1.jpg",
       "price": 4.99,
@@ -23,7 +23,7 @@
       "id": 3,
       "title": "Burritos",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "consiste em uma tortilla de farinha geralmente recheada de diversos ingredientes, a maior parte das variantes utiliza feijão e carne.",
       "imageURL":
         "https://images.unsplash.com/photo-1562059390-a761a084768e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=706&q=80",
       "price": 8.15,
@@ -33,7 +33,7 @@
       "id": 4,
       "title": "Pozole de Pollo o Guajolote",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "No México é comum comer esta sopa à noite, e é clássica nos feriados nacionais ou nas noites frias de inverno.",
       "imageURL":
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pozole.jpg/220px-Pozole.jpg",
       "price": 30.99,
@@ -43,7 +43,7 @@
       "id": 5,
       "title": "Quesadilla",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "A quesadilla é uma tortilla, usualmente uma tortilla de milho - mas às vezes é feita com uma tortilla de trigo, que é recheada com queijo e depois é grelhada.",
       "imageURL":
         "https://images.unsplash.com/photo-1618040996337-56904b7850b9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "price": 29.19,
@@ -53,7 +53,7 @@
       "id": 6,
       "title": "Enchiladas",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "A enchilada é uma panqueca de milho mexicana, muito condimentada, recheada de carne de vaca, feijões ou frango e que leva por cima molho de piripíri e queijo ralado.",
       "imageURL":
         "https://images.unsplash.com/photo-1570461226513-e08b58a52c53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=753&q=80",
       "price": 39.99,
@@ -63,7 +63,7 @@
       "id": 7,
       "title": "Aguachile",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "eito de camarão, submerso em líquido temperado com pimenta, suco de limão, sal, coentro, fatias de pepino e fatias de cebola. Vegetais crus",
       "imageURL":
         "https://images.unsplash.com/photo-1595531507616-1f5347ee003b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
       "price": 40.61,
@@ -73,10 +73,10 @@
       "id": 8,
       "title": "Ceviche",
       "description":
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eum quos at eius assumenda ipsa porro quod consectetur magni, atque maiores nesciunt voluptas quam minus aperiam illum ullam blanditiis commodi.",
+        "Ceviche é carregado com camarão, abacate, tomate e pepino; tudo marinado em suco de limão fresco.",
       "imageURL":
-        "https://images.unsplash.com/photo-1535399831218-d5bd36d1a6b3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2V2aWNoZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-      "price": 21.99,
+        "https://images.unsplash.com/photo-1626663011352-cacdcfe333f8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
+      "price": 41.99,
       "codigo": 205
     }
   ]

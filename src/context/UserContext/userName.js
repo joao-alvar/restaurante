@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "./GlobalState";
 
 export const UserName = (props) => {
   const { users } = useContext(GlobalContext);

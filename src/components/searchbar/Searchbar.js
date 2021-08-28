@@ -5,7 +5,7 @@ import Input from "../../controls/Input";
 import { Link } from "react-router-dom";
 
 const SearchBar = (props) => {
-  const { price, data, id } = props;
+  const { data } = props;
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState("");
 

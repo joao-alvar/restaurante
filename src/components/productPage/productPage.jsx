@@ -35,7 +35,7 @@ const ProductPage = ({ match, history: { push } }) => {
           <p>R$ {price}</p>
         </div>
         <div className="product__page__description">
-          <h3 className="product__page__description__h3">Sobre o produto</h3>
+          <h3 className="product__page__description__h3">Sobre o prato</h3>
           <p>{description}</p>
         </div>
         <div className="product__page__btn">
@@ -45,7 +45,7 @@ const ProductPage = ({ match, history: { push } }) => {
               onClick={() => addProduct(product)}
             >
               {""}
-              minha lista
+              pedir
             </button>
           )}
           {itemInCart && (
@@ -54,10 +54,10 @@ const ProductPage = ({ match, history: { push } }) => {
               onClick={() => increase(product)}
             >
               {" "}
-              mais um?
+              pedir mais um?
             </button>
           )}
-          <button className="btn__product btn__secondary">compre agora</button>
+          <button className="btn__product btn__secondary">checkout</button>
         </div>
       </div>
     </section>

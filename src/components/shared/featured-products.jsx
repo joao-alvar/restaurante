@@ -21,25 +21,26 @@ const FeaturedProduct = (props) => {
         <p className="cart__price">R$ {price}</p>
         <p className="food__list__description">{description}</p>
       </div>
-
-      <div className="product__btn__wrap">
-        {!itemInCart && (
-          <button
-            className="btn__minha__lista"
-            onClick={() => addProduct(product)}
-          >
-            <span>pedir</span>
-          </button>
-        )}
-        {itemInCart && (
-          <button
-            className="btn__minha__lista btn__add__mais"
-            onClick={() => increase(product)}
-          >
-            {" "}
-            <span>pedir mais um?</span>
-          </button>
-        )}
+      <div className="product__btn__container">
+        <div className="product__btn__wrap">
+          {!itemInCart && (
+            <button
+              className="btn__minha__lista"
+              onClick={() => addProduct(product)}
+            >
+              <span>pedir</span>
+            </button>
+          )}
+          {itemInCart && (
+            <button
+              className="btn__minha__lista btn__add__mais"
+              onClick={() => increase(product)}
+            >
+              {" "}
+              <span>pedir mais um?</span>
+            </button>
+          )}
+        </div>
       </div>
     </li>
   );

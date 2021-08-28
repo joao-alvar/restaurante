@@ -1,13 +1,14 @@
 import React, { useState, useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/UserContext/GlobalState";
 import { v4 as uuid } from "uuid";
 import { UserList } from "./UserList";
+import Input from "../../controls/Input";
 
 export const AddUser = () => {
   const [name, setName] = useState("");
   const { addUser } = useContext(GlobalContext);
 
-  const onSubmit = (e) => {
+  const OnHandleName = (e) => {
     e.preventDefault();
     const newUser = {
       id: uuid(),
@@ -21,19 +22,19 @@ export const AddUser = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <label>Name</label>
-      <input
+    <div className="inputName__container">
+      <Input
+        className="inputName"
+        id="name"
         type="text"
         value={name}
         onChange={onChange}
         name="name"
         required
       />
-      {/* <textarea rows="8" cols="20" /> */}
-      <button type="submit">Submit</button>
+      <button onClick={OnHandleName}>Submit</button>
 
       <UserList />
-    </form>
+    </div>
   );
 };

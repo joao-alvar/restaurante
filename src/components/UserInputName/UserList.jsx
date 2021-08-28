@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../../context/UserContext/GlobalState";
 import { Link } from "react-router-dom";
 
 export const UserList = (props) => {
@@ -10,7 +10,7 @@ export const UserList = (props) => {
         <>
           {users.map((user) => (
             <div className="d-flex" key={user.id}>
-              <strong>{user.name}</strong>
+              <h3>Bem vindo: {user.name}</h3>
               <div className="ml-auto">
                 <Link
                   to={`/edit/${user.id}`}
@@ -27,7 +27,7 @@ export const UserList = (props) => {
           ))}
         </>
       ) : (
-        <h4 className="text-center">Número do pedido: {users.id}</h4>
+        <></>
       )}
     </div>
   );

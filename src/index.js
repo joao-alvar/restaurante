@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import ProductsContextProvider from "./context/products-context";
 import CartContextProvider from "./context/cart-context";
-import { GlobalProvider } from "./context/GlobalState";
+import { GlobalProvider } from "./context/UserContext/GlobalState";
 import BookData from "./Data.json";
 
 ReactDOM.render(

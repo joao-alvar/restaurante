@@ -1,13 +1,12 @@
 import React from "react";
-import Input from "../../controls/Input";
 import FormLayout from "../../layout/Form";
 import SearchBar from "../searchbar/Searchbar";
 import Payment from "./Payment";
 import BookData from "../../Data.json";
 import FeaturedCollection from "../featured-collection/featured-collection";
+import { AddUser } from "../UserInputName/UserInput";
 
 const OrdemForm = (props) => {
-  const { values, errors, handleInputChange } = props;
   return (
     <>
       <FormLayout>
@@ -16,23 +15,18 @@ const OrdemForm = (props) => {
             <label htmlFor="name" className="inputLabel">
               Nome:
             </label>
-            <Input
-              id="name"
-              name="name"
-              value={values.customerName}
-              onChange={handleInputChange}
-            />
+            <AddUser />
             <textarea
               placeholder="Adcionar observação"
               id="observacao"
               rows="6"
-              cols="85"
+              cols="84"
             />
           </div>
           <SearchBar data={BookData} />
           <FeaturedCollection />
         </div>
-        <Payment {...{ values, errors, handleInputChange }} />
+        <Payment />
       </FormLayout>
     </>
   );

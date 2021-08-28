@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "./GlobalState";
 import { Link, useHistory } from "react-router-dom";
 
 export const EditUser = (props) => {
