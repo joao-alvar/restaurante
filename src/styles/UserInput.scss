@@ -216,15 +216,32 @@
 
   .user__msg__wrap {
     margin: 0 auto;
-    margin-top: 1rem;
     width: 31%;
+    padding-top: 1rem;
+    border-top: 3px solid #000;
     height: 18rem;
+
+    @media (max-width: 800px) {
+      width: 50%;
+    }
+
+    @media (max-width: 500px) {
+      width: 60%;
+    }
+
+    @media (max-width: 438px) {
+      width: 80%;
+    }
   }
 
   .user__msg__p {
     font-size: 1.5rem;
     flex-wrap: wrap;
   }
+}
+
+.msg__empty {
+  text-align: center;
 }
 
 .inputMsg__btn {

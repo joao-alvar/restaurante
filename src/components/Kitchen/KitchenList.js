@@ -19,7 +19,10 @@ const KitchenList = (props) => {
         </div>
       </div>
       <div className="cart__btn__wrap">
-        <button className="kitchen__btn" onClick={() => moveItem()}>
+        <button
+          className="kitchen__btn"
+          onClick={() => moveItem(alert("Pedido pronto para a entrega"))}
+        >
           Entregar
         </button>
       </div>

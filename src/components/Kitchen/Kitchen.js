@@ -4,6 +4,7 @@ import { CartContext } from "../../context/cart-context";
 import KitchenList from "./KitchenList";
 import { UserName } from "../UserInputName/UserName";
 import { MsgDisplay } from "../userMsg/MsgDisplay";
+import FooterContent from "../footer/FooterContent";
 
 const Kitchen = () => {
   const { itemCount, total, moveItem } = useContext(CartContext);
@@ -54,7 +55,7 @@ const Kitchen = () => {
             </div>
             <div className="user__msg">
               <div className="kitchen__title__wrap">
-                <h2 className="kitchen__title__content">observações</h2>
+                <h2 className="msg__title">observações</h2>
               </div>
               <div className="user__msg__wrap">
                 <MsgDisplay />

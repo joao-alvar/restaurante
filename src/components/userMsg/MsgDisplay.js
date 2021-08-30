@@ -14,7 +14,7 @@ export const MsgDisplay = (props) => {
           ))}
         </>
       ) : (
-        <h2>Nenhuma observação</h2>
+        <h2 className="msg__empty">Nenhuma observação</h2>
       )}
     </div>
   );

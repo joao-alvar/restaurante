@@ -76,7 +76,7 @@ const cartReducer = (state, action) => {
       };
 
     case "MOVE":
-      localStorage.moveItem("cart");
+      localStorage.removeItem("cart");
       return {
         cartItems: [],
         itemCount: 0,
