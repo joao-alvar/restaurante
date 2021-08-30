@@ -8,5 +8,5 @@ As informações dos produtos foram armazenadas em um arquivo json e foi usado u
 useContext também foi usado para atualizar informações junto com localStorage para realizar o armazenamento.
 
 ## `Deploy`
-https://react-restaurant-app-63939.web.app/#pedido
+https://react-restaurant-app-63939.web.app/
 
