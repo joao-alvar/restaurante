@@ -5,6 +5,7 @@ import Ordem from "./components/Ordem/Index";
 import ProductPage from "./Pages/ProductPage";
 import "./styles/main.scss";
 import { EditUser } from "./Pages/EditUser";
+import KitchenPage from "./Pages/kitchenPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         />
         <Route path="/edit/:id" component={EditUser} />
         <Route path="/product/:id" component={ProductPage} />
+        <Route path="/cozinha" component={KitchenPage} />
       </Switch>
     </div>
   );

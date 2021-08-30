@@ -1,33 +1,36 @@
 import React from "react";
-import FormLayout from "../../layout/Form";
 import SearchBar from "../searchbar/Searchbar";
 import Payment from "./Payment";
 import BookData from "../../Data.json";
 import FeaturedCollection from "../featured-collection/featured-collection";
 import { AddUser } from "../UserInputName/UserInput";
+import { UserList } from "../UserInputName/UserList";
 
 const OrdemForm = (props) => {
   return (
     <>
-      <FormLayout>
-        <div className="form__layout__md">
-          <div className="form__container">
+      <div className="form__layout__md">
+        <div className="form__container">
+          <div className="form__input__content">
+            <UserList />
             <label htmlFor="name" className="inputLabel">
               Nome:
             </label>
             <AddUser />
             <textarea
+              className="form__input textArea"
               placeholder="Adcionar observação"
               id="observacao"
-              rows="6"
-              cols="84"
+              maxLength="150"
             />
+            <SearchBar data={BookData} />
           </div>
-          <SearchBar data={BookData} />
           <FeaturedCollection />
         </div>
+      </div>
+      <div className="form__layout__payment">
         <Payment />
-      </FormLayout>
+      </div>
     </>
   );
 };

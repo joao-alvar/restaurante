@@ -1,7 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GlobalContext } from "../../context/UserContext/GlobalState";
 import { v4 as uuid } from "uuid";
-import { UserList } from "./UserList";
 import Input from "../../controls/Input";
 
 export const AddUser = () => {
@@ -37,7 +36,6 @@ export const AddUser = () => {
           Adcionar
         </button>
       </div>
-      <UserList />
     </>
   );
 };

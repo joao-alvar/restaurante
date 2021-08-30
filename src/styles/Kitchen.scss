@@ -1,0 +1,123 @@
+.kitchen__cart__container {
+  width: 100%;
+  height: 63.7rem;
+}
+
+.list__kitchen {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 667px) {
+    flex-direction: column;
+  }
+
+  .kitchen__list__wrap {
+    width: 40%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.61rem;
+
+    @media (max-width: 1050px) {
+      width: 70%;
+    }
+
+    @media (max-width: 667px) {
+      width: 100%;
+      margin-top: 1rem;
+
+      .cart__list__items {
+        width: 98%;
+      }
+    }
+  }
+}
+
+.list__kitchen__userName {
+  margin-left: -9rem;
+  margin-bottom: auto;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+
+  @media (max-width: 667px) {
+    display: flex;
+    align-items: center;
+    margin-left: 0.8rem;
+    width: 100%;
+  }
+
+  .list__kitchen__userName__span {
+    margin-inline-start: 0.41rem;
+  }
+}
+
+.Username__kitchen {
+  color: #efb90a;
+}
+
+.kitchen__btn {
+  padding: 0.4rem 1rem;
+  background-color: #000;
+  border: 1px solid #000;
+  color: #fff;
+  transition: 500ms;
+
+  &:hover {
+    color: #000;
+    background-color: transparent;
+  }
+
+  &:active {
+    background-color: #000;
+    color: #fff;
+    transition: 0ms;
+  }
+}
+
+.kitchen__title__wrap {
+  width: 100%;
+  margin-top: 2rem;
+
+  .kitchen__title__content {
+    margin: 0 auto;
+    text-align: center;
+    width: 31%;
+    font-size: 4.5rem;
+    border-bottom: 3px solid #000;
+
+    @media (max-width: 1050px) {
+      width: 50%;
+    }
+
+    @media (max-width: 676px) {
+      width: 60%;
+      font-size: 3.5rem;
+    }
+
+    @media (max-width: 438px) {
+      width: 80%;
+      font-size: 3rem;
+    }
+  }
+}
+// Cozinha Vazia
+.kitchen__empty {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.kitchen__empty__link {
+  color: #efb90a;
+}

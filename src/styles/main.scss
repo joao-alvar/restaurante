@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;600;700&display=swap");
 
 @import "Navbar", "Form", "HomePage", "Searchbar", "Order.scss", "SingleProduct",
-  "UserInput";
+  "UserInput", "Kitchen";
 :root {
   --primary-font: "Oswald", sans-serif;
   --secondary-font: "Bebas Neue", "Roboto", cursive, sans-serif;
@@ -33,6 +33,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  max-width: 1300px;
   overflow-x: hidden;
 }
 

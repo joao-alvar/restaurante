@@ -74,6 +74,15 @@ const cartReducer = (state, action) => {
         itemCount: 0,
         total: 0,
       };
+
+    case "MOVE":
+      localStorage.moveItem("cart");
+      return {
+        cartItems: [],
+        itemCount: 0,
+        total: 0,
+      };
+
     default:
       return state;
   }

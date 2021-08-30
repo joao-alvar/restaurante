@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  @media (max-width: 800px) {
+    margin-top: 5rem;
+  }
 }
 
 .lista__cart__wrap {
@@ -16,6 +20,10 @@
   gap: 2rem;
   background-color: #eee;
 
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
   .cart__items__img {
     width: 10rem;
     height: 7rem;
@@ -23,6 +31,11 @@
 
   .cart__content {
     margin-top: 0.5rem;
+
+    @media (max-width: 644px) {
+      margin-bottom: auto;
+      margin-top: 2rem;
+    }
   }
 
   .cart__price {
@@ -40,7 +53,7 @@
   justify-content: center;
   flex-direction: column;
   margin-left: auto;
-  margin-right: 2rem;
+  margin-right: 1rem;
 
   .btn__cart {
     background-color: transparent;
@@ -68,14 +81,13 @@
 
 .food__list__ul {
   margin-top: 2%;
-  margin-left: 11.5rem;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 1.2em;
 
   .food__list__li {
-    width: 95%;
+    width: 100%;
     height: 12rem;
     display: flex;
     align-items: center;
@@ -84,6 +96,10 @@
 
 .food__list__description {
   width: 95%;
+
+  @media (max-width: 1245px) {
+    display: none;
+  }
 }
 
 .product__btn__container {

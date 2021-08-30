@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { withRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Input from "../../controls/Input";
 import Select from "../../controls/Select";
 // import SelectInput from "../../components/SelectInput";
@@ -77,16 +77,16 @@ const Total = ({ itemCount, total, clearCart }) => {
                 Troco a receber*
               </label>
               <div className="change__input__wrap">
-                <input
+                <Input
                   type="number"
                   id="num"
                   placeholder="Colocar montante"
                   className="change__tip__num"
                 />
-                <input
+                <Input
                   type="text"
                   id="result"
-                  value={currentNum}
+                  value={`R$ ${currentNum}`}
                   placeholder="Resultado"
                   readOnly
                   className="change__tip__results"
@@ -114,7 +114,11 @@ const Total = ({ itemCount, total, clearCart }) => {
             >
               Excluir pedidos
             </button>
-            <button className="form__input__btn btn__primary">checkout</button>
+            <Link to="/cozinha" className="form__input__link">
+              <button className="form__input__btn btn__primary">
+                checkout
+              </button>
+            </Link>
           </div>
         </div>
       </div>

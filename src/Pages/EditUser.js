@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { GlobalContext } from "../context/UserContext/GlobalState";
 import { Link, useHistory } from "react-router-dom";
+import Input from "../controls/Input";
 
 export const EditUser = (props) => {
   const { editUser, users } = useContext(GlobalContext);
@@ -33,7 +34,7 @@ export const EditUser = (props) => {
         <form onSubmit={onSubmit} className="edit__user__form">
           <div className="edit__user__form__wrap">
             <label className="edit__user__form__label">Nome</label>
-            <input
+            <Input
               className="edit__user__form__input"
               type="text"
               value={selectedUser.name}
@@ -41,11 +42,11 @@ export const EditUser = (props) => {
               name="name"
               placeholder="Enter user"
               required
-            ></input>
+            ></Input>
           </div>
           <div className="edit__user__form__btn">
             <button type="submit" className="btn__edit">
-              Editar Nome
+              Editar <span className="btn__edit__span">Nome</span>
             </button>
             <button className="btn__cancel">
               <Link to="/" className="btn__cancel__link">
