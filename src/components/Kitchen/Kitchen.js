@@ -4,7 +4,6 @@ import { CartContext } from "../../context/cart-context";
 import KitchenList from "./KitchenList";
 import { UserName } from "../UserInputName/UserName";
 import { MsgDisplay } from "../userMsg/MsgDisplay";
-import FooterContent from "../footer/FooterContent";
 
 const Kitchen = () => {
   const { itemCount, total, moveItem } = useContext(CartContext);

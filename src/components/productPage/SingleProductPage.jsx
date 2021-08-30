@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react";
-import { withRouter } from "react-router";
+import { withRouter, Link } from "react-router-dom";
 import { ProductsContext } from "../../context/products-context";
 import { CartContext } from "../../context/cart-context";
 import { isInCart } from "../../helpers";
@@ -59,9 +59,9 @@ const SingleProductPage = ({ match, history: { push } }) => {
                 pedir mais um?
               </button>
             )}
-            <button className="btn__product btn__sg__secondary">
-              checkout
-            </button>
+            <Link to="/cozinha" className="btn__product btn__sg__secondary">
+              <p>checkout</p>
+            </Link>
           </div>
         </div>
       </div>
