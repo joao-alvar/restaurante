@@ -75,6 +75,9 @@
   .lista__vazia__p {
     font-size: 1.46rem;
   }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 
 // Food list

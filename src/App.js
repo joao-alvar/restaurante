@@ -6,6 +6,7 @@ import ProductPage from "./Pages/ProductPage";
 import "./styles/main.scss";
 import { EditUser } from "./Pages/EditUser";
 import KitchenPage from "./Pages/kitchenPage";
+import FooterContent from "./components/footer/FooterContent";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <>
               <HomePage />
               <Ordem />
+              <FooterContent />
             </>
           )}
         />
