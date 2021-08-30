@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../context/cart-context";
 import KitchenList from "./KitchenList";
 import { UserName } from "../UserInputName/UserName";
+import { MsgDisplay } from "../userMsg/MsgDisplay";
 
 const Kitchen = () => {
   const { itemCount, total, moveItem } = useContext(CartContext);
@@ -49,6 +50,14 @@ const Kitchen = () => {
                     moveItem={moveItem}
                   />
                 ))}
+              </div>
+            </div>
+            <div className="user__msg">
+              <div className="kitchen__title__wrap">
+                <h2 className="kitchen__title__content">observações</h2>
+              </div>
+              <div className="user__msg__wrap">
+                <MsgDisplay />
               </div>
             </div>
           </div>

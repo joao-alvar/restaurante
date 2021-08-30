@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Input from "../../controls/Input";
 import Select from "../../controls/Select";
+import FormLayout from "../Form";
 // import SelectInput from "../../components/SelectInput";
 
 const pagamento = [
@@ -69,7 +70,7 @@ const Total = ({ itemCount, total, clearCart }) => {
             {/* <Input type="number" />
             <button onClick={() => clearCart()}>calcular</button> */}
 
-            <div className="change__tip">
+            <FormLayout className="change__tip">
               <label
                 htmlFor="num"
                 className="inputLabelTotal change__tip__label"
@@ -106,7 +107,7 @@ const Total = ({ itemCount, total, clearCart }) => {
                   Limpar
                 </button>
               </div>
-            </div>
+            </FormLayout>
 
             <button
               className="form__input__btn btn__secondary"

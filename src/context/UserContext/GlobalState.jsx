@@ -28,6 +28,13 @@ export const GlobalProvider = ({ children }) => {
     });
   };
 
+  const addMsg = (msg) => {
+    dispatch({
+      type: "ADD_MSG",
+      payload: msg,
+    });
+  };
+
   const editUser = (user) => {
     dispatch({
       type: "EDIT_USER",
@@ -42,6 +49,7 @@ export const GlobalProvider = ({ children }) => {
         removeUser,
         addUser,
         editUser,
+        addMsg,
       }}
     >
       {children}

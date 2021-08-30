@@ -1,19 +1,3 @@
-// const storeCartData = (cartItems) => {
-//   const cart = cartItems.length > 0 ? cartItems : [];
-//   localStorage.setItem("cart", JSON.stringify(cart));
-// };
-
-// export const sumItems = (cartItems) => {
-//   storeCartData(cartItems);
-//   return {
-//     itemCount: cartItems.reduce((total, prod) => total + prod.quantity, 0),
-//     total: cartItems.reduce(
-//       (total, prod) => total + prod.price * prod.quantity,
-//       0
-//     ),
-//   };
-// };
-
 const AppReducer = (state, action) => {
   switch (action.type) {
     case "REMOVE_USER":
@@ -23,17 +7,10 @@ const AppReducer = (state, action) => {
           return user.id !== action.payload;
         }),
       };
-    case "REMOVE_MSG":
+    case "ADD_MSG":
       return {
         ...state,
-        users: state.users.filter((msg) => {
-          return msg.id !== action.payload;
-        }),
-      };
-    case "USER_MSG":
-      return {
-        ...state,
-        users: [action.payload, ...state.users],
+        messages: [action.payload, ...state.messages],
       };
     case "ADD_USER":
       return {

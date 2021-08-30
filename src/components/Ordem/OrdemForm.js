@@ -5,6 +5,7 @@ import BookData from "../../Data.json";
 import FeaturedCollection from "../featured-collection/featured-collection";
 import { AddUser } from "../UserInputName/UserInput";
 import { UserList } from "../UserInputName/UserList";
+import { AddMsg } from "../userMsg/UserAddMsg";
 
 const OrdemForm = (props) => {
   return (
@@ -17,12 +18,7 @@ const OrdemForm = (props) => {
               Nome:
             </label>
             <AddUser />
-            <textarea
-              className="form__input textArea"
-              placeholder="Adcionar observação"
-              id="observacao"
-              maxLength="150"
-            />
+            <AddMsg />
             <SearchBar data={BookData} />
           </div>
           <FeaturedCollection />

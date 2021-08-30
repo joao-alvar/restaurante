@@ -4,8 +4,7 @@ const generateOrderNumber = () =>
   Math.floor(100000 + Math.random() * 900000).toString();
 
 const KitchenList = (props) => {
-  const { title, imageURL, quantity, id, description, moveItem } = props;
-  const product = { title, imageURL, quantity, id, description };
+  const { title, imageURL, quantity, moveItem } = props;
   const orderNum = generateOrderNumber();
   return (
     <div className="cart__list__items">

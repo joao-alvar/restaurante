@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { GlobalContext } from "../../context/UserContext/GlobalState";
 import { v4 as uuid } from "uuid";
 import Input from "../../controls/Input";
+import FormLayout from "../../layout/Form";
 
 export const AddUser = () => {
   const [name, setName] = useState("");
@@ -21,7 +22,7 @@ export const AddUser = () => {
   };
 
   return (
-    <>
+    <FormLayout>
       <div className="inputName__container">
         <Input
           className="inputName"
@@ -36,6 +37,6 @@ export const AddUser = () => {
           Adcionar
         </button>
       </div>
-    </>
+    </FormLayout>
   );
 };
